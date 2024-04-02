@@ -14,7 +14,7 @@
   //#define VARIANT_USART       // Variant for Serial control via USART3 input
   //#define VARIANT_NUNCHUK     // Variant for Nunchuk controlled vehicle build
   //#define VARIANT_PPM         // Variant for RC-Remote with PPM-Sum Signal
-  //#define VARIANT_PWM         // Variant for RC-Remote with PWM Signal
+  #define VARIANT_PWM         // Variant for RC-Remote with PWM Signal
   //#define VARIANT_IBUS        // Variant for RC-Remotes with FLYSKY IBUS
   //#define VARIANT_HOVERCAR    // Variant for HOVERCAR build
   //#define VARIANT_HOVERBOARD  // Variant for HOVERBOARD build
@@ -143,7 +143,7 @@
 #define TRQ_MODE        3               // [-] TORQUE mode
 
 // Enable/Disable Motor
-//#define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
+#define MOTOR_LEFT_ENA                  // [-] Enable LEFT motor.  Comment-out if this motor is not needed to be operational
 #define MOTOR_RIGHT_ENA                 // [-] Enable RIGHT motor. Comment-out if this motor is not needed to be operational
 
 // Control selections
@@ -164,7 +164,7 @@
 #define FIELD_WEAK_LO   750             // ( 500, 1000] Input target Low threshold for starting Field Weakening / Phase Advance. Do NOT set this higher than 1000.
 
 // Extra functionality
-// #define STANDSTILL_HOLD_ENABLE          // [-] Flag to hold the position when standtill is reached. Only available and makes sense for VOLTAGE or TORQUE mode.
+ #define STANDSTILL_HOLD_ENABLE          // [-] Flag to hold the position when standtill is reached. Only available and makes sense for VOLTAGE or TORQUE mode.
 // #define ELECTRIC_BRAKE_ENABLE           // [-] Flag to enable electric brake and replace the motor "freewheel" with a constant braking when the input torque request is 0. Only available and makes sense for TORQUE mode.
 // #define ELECTRIC_BRAKE_MAX    100       // (0, 500) Maximum electric brake to be applied when input torque request is 0 (pedal fully released).
 // #define ELECTRIC_BRAKE_THRES  120       // (0, 500) Threshold below at which the electric brake starts engaging.
